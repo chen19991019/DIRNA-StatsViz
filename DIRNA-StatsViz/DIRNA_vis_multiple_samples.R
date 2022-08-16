@@ -227,7 +227,7 @@ summary_type=ggplot(master,aes(Segment,Types,fill=Type))+
   scale_y_continuous(name = "All_Types",
                      sec.axis = sec_axis(~./100,name = "Shared_Types"))+
   labs(x='Segment',title="Types_of_All_and_Shared_DiRNA")
-ggsave(summary_type,filename = "plots/summary_type.pdf"),height = 6, width = 8)
+ggsave(summary_type,filename = "plots/summary_type.pdf",height = 6, width = 8)
 combining_summary=ggarrange(summary_count, summary_type,labels=c("A","B"), ncol = 2, nrow = 1)
 ggsave(combining_summary,filename = "plots/combining_summary.pdf",height = 6, width = 14)
 ####venn####
