@@ -94,7 +94,8 @@ optional arguments:
                         Use it only if you do not want to plot for multiple samples
   --project PROJECT     The name of the project
   --cycle_index CYCLE_INDEX
-                        The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, the default number of cycle is equal to the total count of the dirna of the sample
+                        The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, 
+                        the default number of cycle is equal to the total count of the dirna of the sample
   ```
   After coming to the working folder, the scripts are run by one command.
   Example command line using example data:
