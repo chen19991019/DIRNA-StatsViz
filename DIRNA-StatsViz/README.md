@@ -1,10 +1,12 @@
 The product DIRNA-StatsViz is designed accroding the composition of data and the type of analysis, like single samples analysis, multiple samples analysis and multiple projects analysis. The sacipts can be divided into four parts, such as the script for expected data of DI-RNAs breakpoints, single-sample scripts, multi-sample scripts and multi-project scripts.
 
-# DIRNA_breakpoints_expected.py(the script for expected data of DI-RNAs breakpoints)
+# DIRNA_breakpoints_expected.py
+# (the script for expected data of DI-RNAs breakpoints)
 
 It is always called by single-sample scripts. It is responsible for assisting single-sample scripts in generating expected data like PB2_expected_ nucleotides.csv, breakpoints_expected_nucleotides.csv and breakpoints_expected_ percentage.csv of DI-RNAs for the sample. 
 
-# DIRNA_stats_single_sample.py & DIRNA_vis_single_sample.R(Single-sample Scripts)
+# DIRNA_stats_single_sample.py & DIRNA_vis_single_sample.R
+# (Single-sample Scripts)
 They are apllied to perform single-sample analysis.
 
 ## Input
@@ -64,7 +66,8 @@ There will be an inevitable warning when drawing the WebLogo plot.For example:
 Warning message:
 `guides(<scale> = FALSE)` is deprecated. Please use `guides(<scale> = "none")` instead. 
 
-# DIRNA_stats_multiple_samples.py & DIRNA_vis_multiple_samples.R(Multi-sample Scripts)
+# DIRNA_stats_multiple_samples.py & DIRNA_vis_multiple_samples.R
+# (Multi-sample Scripts)
 For analysing data of multiple samples, DIRNA_stats_multiple_samples.py and DIRNA_vis_multiple_samples.R can be used.
 
 ## Input
@@ -133,7 +136,8 @@ and
 geom_path: Each group consists of only one observation. Do you need to adjust
 the group aesthetic? 
 
-# DIRNA_stats_multiple_projects.py & DIRNA_vis_multiple_projects.R(Multi-project Scripts)
+# DIRNA_stats_multiple_projects.py & DIRNA_vis_multiple_projects.R
+# (Multi-project Scripts)
 DIRNA_stats_multiple_projects.py and DIRNA_vis_multiple_projects.R were the scripts for anslysing DI-RNAs of multiple projects.
 
 ## Input
