@@ -1,4 +1,5 @@
 The product DIRNA-StatsViz is designed accroding the composition of data and the type of analysis, like single samples analysis, multiple samples analysis and multiple projects analysis. The sacipts can be divided into four parts, such as the script for expected data of DI-RNAs breakpoints, single-sample scripts, multi-sample scripts and multi-project scripts.
+
 # DIRNA_breakpoints_expected.py(the script for expected data of DI-RNAs breakpoints)
 
 It is always called by single-sample scripts. It is responsible for assisting single-sample scripts in generating expected data like PB2_expected_ nucleotides.csv, breakpoints_expected_nucleotides.csv and breakpoints_expected_ percentage.csv of DI-RNAs for the sample. 
@@ -42,10 +43,10 @@ optional arguments:
 Four data tables folders and a plot folder are produced to sample folder by default.
 
 The data folders are:
-* dirna_length:
-* dirna_length_percentage:
-* remaining_length:
-* breakpoints:
+* dirna_length
+* dirna_length_percentage
+* remaining_length
+* breakpoints
 
 The pdf of plots in plots folder are:
 * combining_breakpoints.pdf
@@ -102,11 +103,11 @@ optional arguments:
 ## Output
 Four processing data tables folders, two useful tables and a plot folder are produced to working folder by default.
 
-The data folders are:
-* combined_deletions:
-* filtered_deletions:
-* sorted_final_deletions:
-* breakpoints:
+The data folders are
+* combined_deletions
+* filtered_deletions
+* sorted_final_deletions
+* breakpoints
 
 Two useful tables are:
 * Overview.csv
@@ -185,13 +186,13 @@ optional arguments:
 Three processing data tables folders, a summary table and a plot folder are produced to working folder by default.
 
 The data folders are:
-* combined_deletions:
-* filtered_deletions:
-* sorted_final_deletions:
+* combined_deletions
+* filtered_deletions
+* sorted_final_deletions
 
 A summary table is: Summary.csv
 
-The pdf of plots in plots folder are: dot_breakpoints.pdf
+The pdf of plot in plots folder is: dot_breakpoints.pdf
 
 
 
