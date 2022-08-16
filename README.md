@@ -4,7 +4,7 @@ This is the folder containing the scripts of the product DIRNA-StatsViz. You can
 There are 4 Python scripts and 3 R scripts.
 
 4 Python scripts:
-* DIRNA_stats_single_sample.py&DIRNA_vis_single_sample.R
+* DIRNA_stats_single_sample.py
 * DIRNA_stats_multiple_samples.py
 * DIRNA_stats_multiple_projects.py
 * DIRNA_breakpoints_expected.py
