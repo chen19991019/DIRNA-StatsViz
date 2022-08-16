@@ -1,3 +1,7 @@
+The product DIRNA-StatsViz is designed accroding the composition of data and the type of analysis, like single samples analysis, multiple samples analysis and multiple projects analysis. The sacipts can be divided into four parts, such as the script for expected data of DI-RNAs breakpoints, single-sample scripts, multi-sample scripts and multi-project scripts.
+
+Some packages need to be installed beforehand.
+
 # Inatall Packages
 For the Python scripts, install
 * argparse
@@ -19,8 +23,6 @@ For R scripts,install
 * UpSetR
 * ggvenn
 * ggrepel
-
-The product DIRNA-StatsViz is designed accroding the composition of data and the type of analysis, like single samples analysis, multiple samples analysis and multiple projects analysis. The sacipts can be divided into four parts, such as the script for expected data of DI-RNAs breakpoints, single-sample scripts, multi-sample scripts and multi-project scripts.
 
 # DIRNA_breakpoints_expected.py
 
