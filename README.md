@@ -21,8 +21,8 @@ The folder stores the datasets used to evaluate and test the codes of DIRNA-Stat
  * single_sample_test: A small artificial datasets where the same frequency(0.25) of deletions length percentage 95%, 75%, 55%, 35% and 15%.
  * multi_samples__same: This group consits of two same illumina samples.
  * multi_samples__different: A small artificial datasets is made up of two different samples.
- * multiple_projects_same:This project consits of 3 same project test,and each test has two same illumina samples.
- * multiple_projects_different: A small artificial datasets is made up of 3 different project,and each project has different samples.
+ * multiple_projects_same:This project consits of 3 same project,and each test has two same illumina samples.
+ * multiple_projects_different: A small artificial datasets is made up of 3 different projects,and each project has different samples.
 
 
 
