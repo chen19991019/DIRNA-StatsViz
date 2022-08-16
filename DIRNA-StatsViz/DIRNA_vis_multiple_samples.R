@@ -205,7 +205,7 @@ summary_count=ggplot(master,aes(Segment,Counts,fill=Type))+
   scale_y_continuous(name = "All_Counts",
                      sec.axis = sec_axis(~./100,name = "Shared_Counts"))+
   labs(x='Segment',title="Counts_of_Sum_and_Shared_DiRNA")
-ggsave(summary_count,filename = paste("plots/summary_count",".pdf"),height = 6, width = 8)
+ggsave(summary_count,filename = "plots/summary_count.pdf",height = 6, width = 8)
 
 summary=read.csv("Summary.csv",header=TRUE,sep= ",")
 sum=as.data.frame(summary$Sum_Types)
@@ -227,7 +227,7 @@ summary_type=ggplot(master,aes(Segment,Types,fill=Type))+
   scale_y_continuous(name = "All_Types",
                      sec.axis = sec_axis(~./100,name = "Shared_Types"))+
   labs(x='Segment',title="Types_of_All_and_Shared_DiRNA")
-ggsave(summary_type,filename = paste("plots/summary_type",".pdf"),height = 6, width = 8)
+ggsave(summary_type,filename = "plots/summary_type.pdf"),height = 6, width = 8)
 combining_summary=ggarrange(summary_count, summary_type,labels=c("A","B"), ncol = 2, nrow = 1)
 ggsave(combining_summary,filename = "plots/combining_summary.pdf",height = 6, width = 14)
 ####venn####
