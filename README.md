@@ -15,7 +15,7 @@ There are 4 Python scripts and 3 R scripts.
 * DIRNA_vis_multiple_projects.R
 
 # test
-The folder saves the datasets used to evaluate and test the codes of DIRNA-StatsViz. There are 5 types of dataset.
+The folder stores the datasets used to evaluate and test the codes of DIRNA-StatsViz. There are 5 types of dataset.
  * single_sample_test: A small artificial datasets where the same frequency(0.25) of deletions length percentage 95%, 75%, 55%, 35% and 15%.
  * multi_samples__same: This group consits of two same illumina samples.
  * multi_samples__different: A small artificial datasets is made up of two different samples.
