@@ -26,14 +26,11 @@ optional arguments:
   -h, --help            show this help message and exit
   --sample SAMPLE       The name of the sample
   --noplots_for_singlesample
-                        Use it only if you do not want to plot for the single
-                        sample
+                        Use it only if you do not want to plot for the single sample
   --project PROJECT     The name of the project
   --cycle_index CYCLE_INDEX
-                        The number of cycles to produce the expected data for
-                        breakpoints.Use it only if you want to customize the
-                        number of cycle, the default number of cycle is equal
-                        to the total count of the dirna of the sample
+                        The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, 
+                        the default number of cycle is equal to the total count of the dirna of the sample
   ```
   After coming to the sample folder, the scripts are run by one command:
   Example command line using example data:
@@ -97,8 +94,7 @@ optional arguments:
                         Use it only if you do not want to plot for multiple samples
   --project PROJECT     The name of the project
   --cycle_index CYCLE_INDEX
-                        The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, the default number of cycle is equal to the total
-                        count of the dirna of the sample
+                        The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, the default number of cycle is equal to the total count of the dirna of the sample
   ```
   After coming to the working folder, the scripts are run by one command.
   Example command line using example data:
@@ -171,22 +167,16 @@ optional arguments:
   --dirna_count_threshold DIRNA_COUNT_THRESHOLD
                         The threshold used for filtering dirna by their counts
   --venn_upset_threshold VENN_UPSET_THRESHOLD
-                        The threshold used to filtering by their counts when
-                        you plot venn and upset for multiple samples
+                        The threshold used to filtering by their counts when you plot venn and upset for multiple samples
   --noplots_for_singlesample
-                        Use it only if you do not want to plot for the single
-                        sample
+                        Use it only if you do not want to plot for the single sample
   --noplots_for_multiplesamples
-                        Use it only if you do not want to plot for multiple
-                        samples
+                        Use it only if you do not want to plot for multiple samples
   --noplots_for_multipleprojects
-                        Use it only if you do not want to plot for multiple
-                        projects
+                        Use it only if you do not want to plot for multiple projects
   --cycle_index CYCLE_INDEX
-                        The number of cycles to produce the expected data for
-                        breakpoints.Use it only if you want to customize the
-                        number of cycle, the default number of cycle is equal
-                        to the total count of the dirna of the sample
+                        The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, 
+                        the default number of cycle is equal to the total count of the dirna of the sample
   ```
   After coming to the working folder, the scripts are run by one command line.
   Example command line using example data:
