@@ -1,26 +1,24 @@
 # DIRNA-StatsViz
-
+This is the folder containing the scripts of the product DIRNA-StatsViz. You can download this folder to apply DIRNA-StatsViz
+There are 4 Python scripts and 3 R scripts.
+4 Python scripts:
+    * DIRNA_stats_single_sample.py
+    * DIRNA_stats_multiple_samples.py
+    * DIRNA_stats_multiple_projects.py
+    * DIRNA_breakpoints_expected.py
+3 R scripts:
+    * DIRNA_vis_single_sample.R
+    * DIRNA_vis_multiple_samples.R
+    * DIRNA_vis_multiple_projects.R
 # test
-## Introduction
+The data used to evaluate and test code of DIRNA-StatsViz is save in this folder.
+ * single_sample_test:
+ * multi_samples__same:
+ * multi_samples__different:
+ * multiple_projects_same:
+ * multiple_projects_different:
 
-This project aims to try to help user understand vimms-gym models through a visual app. This project has completed an interactive web application. In the application, users can complete the training simulation of vimms-gym model and the visualization of the results. The data used in the present simulations were obtained from the BEER sample of Glasgow Polyomics. In the app, users can observe different features, how chemical are fragmented, and trajectory analysis for one episode.
 
-## Install vimms-gym
-
-To use this app, you need to install vimms-gym first. Currently, vimms-gym is not in the form of package and is in the development stage. Please clone the contents of the entire branch repository first.
-
-***install dependencies through Anaconda***
-
-1. Install Anaconda (https://www.anaconda.com/products/individual).
-2. Cloned the whole repository.
-3. Go to the location of the clone repository in the terminal and run `$ conda env create --file environment.yml` to create a new virtual environment of vimms-gym.
-
-## Usage
-
-1. Go into the virtual environment of vimms-gym by typing `$ conda activate vimms-gym` in terminal.
-2. Go into the cloned repository through terminal.
-3. Go into viewer folder by typing `$ cd viewer`
-2. Run the app by typing `$ streamlit run myviewer.py`.
 
 
 
