@@ -1,4 +1,6 @@
-#python
+# DIRNA-StatsViz
+
+# test
 ## Introduction
 
 This project aims to try to help user understand vimms-gym models through a visual app. This project has completed an interactive web application. In the application, users can complete the training simulation of vimms-gym model and the visualization of the results. The data used in the present simulations were obtained from the BEER sample of Glasgow Polyomics. In the app, users can observe different features, how chemical are fragmented, and trajectory analysis for one episode.
