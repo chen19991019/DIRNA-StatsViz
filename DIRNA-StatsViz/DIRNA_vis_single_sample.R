@@ -1,7 +1,7 @@
 library(optparse)
 library(ggplot2)
 library(hexbin)
-library(ggpubr)#是ggarrange的包
+library(ggpubr)
 library(ggseqlogo)
 make_heatmap = function(sample,segment)
 {
@@ -87,7 +87,7 @@ length_plot=ggplot(master, aes(x = Name, y = Percentage, fill = Length)) +  # Cr
   theme_bw()+
   labs(x='Segment',title = "DIRNA_length_frequency_plot")
 length_plot
-ggsave(length_plot,filename = paste(sample,"/plots/length_frequency_plot",".pdf",sep=""),height = 6, width = 8)
+ggsave(length_plot,filename = paste(sample,"/plots/length_frequency_plot.pdf",sep=""),height = 6, width = 8)
 
 ####Count and Scaled####
 count_scale=data.frame(Name=c(rep("PB2",2),rep("PB1",2),rep("PA",2),rep("HA",2),rep("NP",2),rep("NA",2),rep("M",2),rep("NS",2)),
@@ -109,7 +109,7 @@ count_scale_plot=ggplot(count_scale,aes(Name,Number,fill=Type))+
                      sec.axis = sec_axis(~./5000,name = "Scaled"))+
   labs(x='Segment',y='Frequency',title="DIRNA_Count_Scale")
 count_scale_plot
-ggsave(count_scale_plot,filename = paste(sample,"/plots/count_scale_plot_",".pdf",sep=""),height = 6, width = 8)
+ggsave(count_scale_plot,filename = paste(sample,"/plots/count_scale_plot.pdf",sep=""),height = 6, width = 8)
 
 ####dirna length percentage plot####
 
@@ -141,7 +141,7 @@ length_percentage_plot=ggplot(master, aes(x = Name, y = Percentage, fill = Lengt
   theme_bw()+
   labs(x='Segment',y='Frequency',title = "DIRNA_length_percentage_frequency_plot")
 length_percentage_plot
-ggsave(length_percentage_plot,filename = paste(sample,"/plots/length_percentage_frequency_plot_",".pdf",sep=""),height = 6, width = 8)
+ggsave(length_percentage_plot,filename = paste(sample,"/plots/length_percentage_frequency_plot.pdf",sep=""),height = 6, width = 8)
 
 ####for remaining length####
 
@@ -172,12 +172,12 @@ remaining_length_plot=ggplot(master, aes(x = Name, y = Percentage, fill = Remain
   theme_bw()+
   labs(x='Segment',y='Frequency',title = "Remaining_length_frequency_plot")
 remaining_length_plot
-ggsave(remaining_length_plot,filename = paste(sample,"/plots/remaining_length_frequency_plot_",".pdf",sep=""),height = 6, width = 8)
+ggsave(remaining_length_plot,filename = paste(sample,"/plots/remaining_length_frequency_plot.pdf",sep=""),height = 6, width = 8)
 
 ####combining_percentage bar plot####
 combining_percentage_barplot=ggarrange(length_plot, length_percentage_plot, remaining_length_plot, 
                                       ncol = 3, nrow = 1)
-ggsave(combining_percentage_barplot,filename = paste(sample,"/plots/combining_frequency_barplot",".pdf", sep=""), height = 8, width = 20)
+ggsave(combining_percentage_barplot,filename = paste(sample,"/plots/combining_frequency_barplot.pdf", sep=""), height = 8, width = 20)
 
 ####heatmap####
 for(se in c("PB2", "PB1", "PA", "HA", "NP", "NA", "M", "NS"))
@@ -197,7 +197,7 @@ mplot = make_heatmap(sample,"M")
 npplot = make_heatmap(sample,"NP")
 combining_heatmap=ggarrange(pb2plot, pb1plot, paplot, haplot, npplot, naplot, mplot, nsplot, 
                   ncol = 2, nrow = 4)
-ggsave(combining_heatmap,filename = paste(sample,"/plots/combining_heatmap",".pdf", sep=""), height = 12, width = 8)
+ggsave(combining_heatmap,filename = paste(sample,"/plots/combining_heatmap.pdf", sep=""), height = 12, width = 8)
 ####breakpoints####
 data_e=read.csv(paste(sample,"/breakpoints/breakpoints_expected_percentage.csv",sep=""),header=TRUE,sep=",")
 row.names(data_e)=data_e$Nucleotide
@@ -206,12 +206,12 @@ row.names(data_o)=data_e$Nucleotide
 
 a=make_bar_for_breakpoints("A")
 g=make_bar_for_breakpoints("G")
-#ggsave(g,filename = paste(sample,"/plots/breakpoints_G",".pdf",sep=""),height = 6, width = 8)
+
 c=make_bar_for_breakpoints("C")
 t=make_bar_for_breakpoints("T")
 
 combining_breakpoint=ggarrange(a,g,c,t, ncol = 2, nrow = 2)
-ggsave(combining_breakpoint,filename = paste(sample,"/plots/combining_breakpoints",".pdf",sep=""),height = 6, width = 8)
+ggsave(combining_breakpoint,filename = paste(sample,"/plots/combining_breakpoints.pdf",sep=""),height = 6, width = 8)
 
 ####seq WebLogo(frequency of each amino or nucleic acid)####
 seqdata=read.table(paste(sample,"/breakpoints/breakpoints_observed_percentage.csv",sep=""),header=FALSE,sep=",")
@@ -233,7 +233,7 @@ seq=ggseqlogo(seqdata, method="bits")+
   annotate("text", x = 4, y = -0.03, label = "down_2",color="black",size = 4)+
   guides(colour = "none")
 seq
-ggsave(seq,filename = paste(sample,"/plots/frequency_of_nucleotides",".pdf",sep=""),height = 6, width = 8)
+ggsave(seq,filename = paste(sample,"/plots/frequency_of_nucleotides.pdf",sep=""),height = 6, width = 8)
 
 
 #R --vanilla --slave --args minion < /Users/chenhong1/DIRNA-StatsViz/DIRNA_vis_single_sample.R
