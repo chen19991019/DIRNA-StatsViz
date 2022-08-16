@@ -1,0 +1,2 @@
+DelStart-DelEnd	Count	5-2bp	3-2bp	Length	Length%
+10-369	7	AG	CT	359	0.35

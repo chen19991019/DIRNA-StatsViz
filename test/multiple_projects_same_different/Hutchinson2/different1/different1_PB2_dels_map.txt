@@ -1,0 +1,2 @@
+DelStart-DelEnd	Count	5-2bp	3-2bp	Length	Length%
+10-1785	9	GA	TC	1775	0.75
