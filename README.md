@@ -14,6 +14,8 @@ There are 4 Python scripts and 3 R scripts.
 * DIRNA_vis_multiple_samples.R
 * DIRNA_vis_multiple_projects.R
 
+Tips: there are two example files of sample_configure.csv and project_configure.csv.
+
 # test
 The folder stores the datasets used to evaluate and test the codes of DIRNA-StatsViz. There are 5 types of dataset.
  * single_sample_test: A small artificial datasets where the same frequency(0.25) of deletions length percentage 95%, 75%, 55%, 35% and 15%.
