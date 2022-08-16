@@ -134,7 +134,8 @@ The pdf of plots in plots folder are:
 * summary_count.pdf
 
 ## Warning
-There will be an inevitable warning if sample sample has no qualifying DI-RNAs after further screening when drawing the Venn and UpSet plot.For example:
+There will be an inevitable warning if sample sample has no qualifying DI-RNAs after further screening when drawing the Venn and UpSet plot.
+  For example:
 "!!!Warning:There is one sample where the count of all DiRNA of the NA segment is less than the threshold, so the upset plot does not apply to segment NA"
   
 and 
