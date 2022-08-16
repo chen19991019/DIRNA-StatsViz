@@ -222,4 +222,4 @@ The pdf of plot in plots folder is: dot_breakpoints.pdf
 
 
 ## Warning
-There will be an inevitable warning printed by single-sample scripts and multi-sample scripts.
+There will be inevitable warnings printed by single-sample scripts and multi-sample scripts.
