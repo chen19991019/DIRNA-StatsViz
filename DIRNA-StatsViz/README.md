@@ -64,6 +64,7 @@ The pdf of plots in plots folder are:
 
 ## Warning
 There will be an inevitable warning when drawing the WebLogo plot.For example:
+  
 Warning message:
 `guides(<scale> = FALSE)` is deprecated. Please use `guides(<scale> = "none")` instead. 
 
@@ -135,7 +136,9 @@ The pdf of plots in plots folder are:
 ## Warning
 There will be an inevitable warning if sample sample has no qualifying DI-RNAs after further screening when drawing the Venn and UpSet plot.For example:
 "!!!Warning:There is one sample where the count of all DiRNA of the NA segment is less than the threshold, so the upset plot does not apply to segment NA"
+  
 and 
+  
 geom_path: Each group consists of only one observation. Do you need to adjust
 the group aesthetic? 
 
