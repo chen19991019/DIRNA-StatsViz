@@ -4,13 +4,7 @@ Some packages need to be installed beforehand.
 
 # Inatall Packages
 For the Python scripts, install
-* argparse
-* csv
-* os
-* subprocess
-* random
 * pandas
-* shutil
 
 For R scripts,install
 * optparse
