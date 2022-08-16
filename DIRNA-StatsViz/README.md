@@ -34,6 +34,7 @@ optional arguments:
   ```
   After coming to the sample folder, the scripts are run by one command:
   Example command line using example data:
+  
   ``./DIRNA-StatsViz/DIRNA_stats_single_sample.py --sample illumina``
   
  Scripts generate plots by default, but you can control the script not to draw plots and only obtain the desired data tables by adding option ```--noplots_for_singlesample``` . 
@@ -99,6 +100,7 @@ optional arguments:
   ```
   After coming to the working folder, the scripts are run by one command.
   Example command line using example data:
+  
   ``python3 ./DIRNA-StatsViz/DIRNA_stats_multiple_samples.py --dirna_count_threshold 3 --venn_upset_threshold 3``
   
  Scripts both generate tables and plots for multiple samples and call single-sample scripts to analyse and plot for each single sample by default. You can add option ```--noplots_for_singlesample```and option ```--noplots_for_multiplesamples``` to prevent them generatring plots. 
@@ -181,6 +183,7 @@ optional arguments:
   ```
   After coming to the working folder, the scripts are run by one command line.
   Example command line using example data:
+  
   ``python3 ./DIRNA-StatsViz/DIRNA_stats_multiple_projects.py --dirna_count_threshold 3 --venn_upset_threshold 3``
   
  Scripts would call scripts for single sample and for multiple samples to be run, so they would generate plots for single sample, multiple samples and multiple projects by default.You can add option ```--noplots_for_singlesample```, option ```--noplots_for_multiplesamples``` and option ```--noplots_for_multipleprojects```to prevent them generatring plots. 
