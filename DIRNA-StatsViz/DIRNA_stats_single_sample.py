@@ -177,7 +177,7 @@ if args.sample:
                             "{}_NA_dels_map.txt".format(args.sample): {coverage["NA"]: "NA_remaining_length.csv"},
                             "{}_NP_dels_map.txt".format(args.sample): {coverage["NP"]: "NP_remaining_length.csv"},
                             "{}_NS_dels_map.txt".format(args.sample): {coverage["NS"]: "NS_remaining_length.csv"}}
-        for key in FILE_REMAIN_LENGTH:#(可以加个try)
+        for key in FILE_REMAIN_LENGTH:
             try:
                 file_path = master_path + key
                 with open(file_path, 'r') as textFile:
@@ -200,7 +200,7 @@ if args.sample:
                             for line1 in textFile:
                                 line1 = line1.replace('\t', ',')
                                 l = line1.split(',')
-                                remainingcoordinate = l[0].split('-')  # 现在左坐标是remainingcoordinate[0]
+                                remainingcoordinate = l[0].split('-')
                                 L += int(l[1])
                                 #remaining length= coverage - DelEnd + DelStar
                                 remaining = int(key2) - int(remainingcoordinate[1]) + int(remainingcoordinate[0])
@@ -350,6 +350,6 @@ if args.noplots_for_singlesample==False:
 else:
     print("Data analysis for a single sample finished!")
 
-
+#some example command lines
 #python3 /Users/chenhong1/DIRNA-StatsViz/DIRNA_stats_single_sample.py  --sample minion --cycle_index 1000 --noplots_for_singlesample
 #python3 /Users/chenhong1/DIRNA-StatsViz/DIRNA_stats_single_sample.py  --sample illumina --project Hutchinson
