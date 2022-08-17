@@ -96,7 +96,7 @@ for seg in SEGMENT:
                 samplelists = '{} : '.format(pro)
                 for a in range(len(line) - 1, 5, -1):
                     if int(line[a]) != 0:
-                        samplelist = '{}={}|'.format(columnname[a], line[a]) #only after I add - behind them ,san I seperate the list不然，那些样品和数量都挤在一起
+                        samplelist = '{}={}|'.format(columnname[a], line[a])
                         samplelists=samplelists+samplelist
                 samplelists=samplelists.strip("|")
                 line = [line[0], line[1], line[2], line[3]] + [samplelists]
@@ -202,7 +202,7 @@ for pro in projects:
                 sumcount += count
             else:
                 pass
-    A_up = [0] * 2  # 5个的时候，换成5
+    A_up = [0] * 2
     G_up = [0] * 2
     C_up = [0] * 2
     T_up = [0] * 2
@@ -211,7 +211,7 @@ for pro in projects:
     C_down = [0] * 2
     T_down = [0] * 2
     for data in datas_up:
-        for i in range(0, 2):  # 5个的时候换成5
+        for i in range(0, 2):
             if data[i] == 'A':
                 A_up[i] += int(data[2])
             elif data[i] == 'G':
@@ -269,5 +269,5 @@ else:
 shutil.rmtree("final_deletions")
 shutil.rmtree("prepare")
 
-
+#some example command lines
 #python3 /Users/chenhong1/DIRNA-StatsViz/DIRNA_stats_multiple_projects.py --projects 1012_2-3-6 1012_2-3 1013_2-3 --dirna_count_threshold 0 --venn_upset_threshold 0 --cycle_index 10000 --noplots_for_singlesample  --noplots_for_multiplesamples --noplots_for_multipleprojects

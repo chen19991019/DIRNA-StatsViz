@@ -48,5 +48,5 @@ ggsave(t,filename = "plots/dot_breakpoints_T.pdf", height = 6, width = 8)
 
 combining_dot_plot=ggarrange(a,g,c,t, ncol = 2, nrow = 2)
 ggsave(combining_dot_plot,filename = "plots/combining_dot_breakpoints.pdf",height = 6, width = 8)
-
+#example command line
 #R --vanilla --slave --args project_configure.csv < /Users/chenhong1/DIRNA-StatsViz/DIRNA_vis_multiple_projects.R

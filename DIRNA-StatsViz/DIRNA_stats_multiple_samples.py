@@ -189,7 +189,7 @@ for seg in SEGMENT:
             se = seg
             if se == "NA":
                 se = "Na"
-    for a1 in range(0, len(samples), 1):#每个样品占多少
+    for a1 in range(0, len(samples), 1):
         with open(sorted_final_deletions_name, "r") as textFile:
             next(textFile)
             samplesum_conut = 0
@@ -201,7 +201,7 @@ for seg in SEGMENT:
                 samplesum_conut += int(l[scindex])#sample's deletion
                 if int(l[scindex]) > 0:
                     samplesum_dirna += 1
-                if int(l[3]) == len(samples):#如果要求Count>=3在每个sample的话，就改成上面同时要求那样
+                if int(l[3]) == len(samples):
                     sampleshared_conut += int(l[scindex])
         ssum_conut[a1] = samplesum_conut
         sshared_conut[a1] = sampleshared_conut
@@ -311,6 +311,8 @@ if args.project:
     shutil.rmtree(args.project+"/final_deletions")
 else:
     shutil.rmtree("final_deletions")
+
+#some example command lines
 #python3 /Users/chenhong1/DIRNA-StatsViz/DIRNA_stats_multiple_samples.py --dirna_count_threshold 3 --venn_upset_threshold 0 --cycle_index 100 --project Project2
 #python3 /Users/chenhong1/DIRNA-StatsViz/DIRNA_stats_multiple_samples.py --dirna_count_threshold 3 --venn_upset_threshold 3 --noplots_for_multiplesamples --noplots_for_singlesample
 #python3 /Users/chenhong1/DIRNA-StatsViz/DIRNA_stats_multiple_samples.py --dirna_count_threshold 3 --venn_upset_threshold 3 --project Project2

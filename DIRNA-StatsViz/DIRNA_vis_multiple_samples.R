@@ -78,14 +78,14 @@ make_line_plot_for_Count = function(number_of_sample,segment)
   summary=read.table("Summary.csv",header=TRUE,sep=",")
   row.names(summary)=summary$Segment
   sumend=9+number_of_sample
-  sum_count=summary[segment,10:sumend]#9+样品数
+  sum_count=summary[segment,10:sumend]
   sum_count=as.data.frame(t(sum_count))
   sum_count$Samplename=co$Samplename
   sum_count$Type="All_DiRNA"
   
   sharedstart=sumend+1
   sharedend=9+number_of_sample+number_of_sample
-  shared_count=summary[segment,sharedstart:sharedend]#9+2样品数
+  shared_count=summary[segment,sharedstart:sharedend]
   shared_count=as.data.frame(t(shared_count))
   shared_count$Samplename=co$Samplename
   shared_count$Type="Shared_DiRNA"
@@ -339,7 +339,7 @@ t=make_dot_plot_for_breakpoints("T")
 ggsave(t,filename = "plots/dot_breakpoints_T.pdf", height = 6, width = 8)
 combining_dot_plot=ggarrange(a,g,c,t, ncol = 2, nrow = 2)
 ggsave(combining_dot_plot,filename = "plots/combining_dot_breakpoints.pdf",height = 6, width = 8)
-
+#example command line
 #R --vanilla --slave --args sample_configure.csv 0 < /Users/chenhong1/DIRNA-StatsViz/DIRNA_vis_multiple_samples.R
 
 
