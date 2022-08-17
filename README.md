@@ -22,7 +22,7 @@ The folder stores the datasets used to evaluate and test the codes of DIRNA-Stat
  * multi_samples__same: This group consits of two same illumina samples.
  * multi_samples__different: A small artificial datasets is made up of two different samples.
  * multiple_projects_same:This project consits of 3 same project,and each test has two same illumina samples.
- * multiple_projects_different: A small artificial datasets is made up of 3 different projects,and each project has different samples.
+ * multiple_projects_different: A small artificial datasets is made up of 3 different projects.
 
 
 
