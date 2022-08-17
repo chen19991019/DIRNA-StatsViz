@@ -19,10 +19,10 @@ make_heatmap = function(sample,segment)
 }
 make_bar_for_breakpoints = function(Nucleotide)
 {
-  master_e=as.data.frame(t(data_e[Nucleotide,2:5])) #等是5个的时候改成2:11
+  master_e=as.data.frame(t(data_e[Nucleotide,2:5])) 
   master_e$Type="Expected"
   master_e$Position=row.names(master_e)
-  master_o=as.data.frame(t(data_o[Nucleotide,2:5])) #等是5个的时候改成2:11
+  master_o=as.data.frame(t(data_o[Nucleotide,2:5])) 
   master_o$Type="Observed"
   master_o$Position=row.names(master_o)
   master=rbind(master_e,master_o)
@@ -235,7 +235,7 @@ seq=ggseqlogo(seqdata, method="bits")+
 seq
 ggsave(seq,filename = paste(sample,"/plots/frequency_of_nucleotides.pdf",sep=""),height = 6, width = 8)
 
-
+#example command line
 #R --vanilla --slave --args minion < /Users/chenhong1/DIRNA-StatsViz/DIRNA_vis_single_sample.R
 
 
