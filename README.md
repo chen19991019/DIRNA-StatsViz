@@ -16,13 +16,13 @@ There are 4 Python scripts and 3 R scripts.
 
 Tips: there are two example files of sample_configure.csv and project_configure.csv.
 
-# test
-The folder stores the datasets used to evaluate and test the codes of DIRNA-StatsViz. There are 5 types of dataset.
- * single_sample_test: A small artificial datasets where the same frequency(0.25) of deletions length percentage 95%, 75%, 55%, 35% and 15%.
- * multi_samples__same: This group consits of two same illumina samples.
- * multi_samples__different: A small artificial datasets is made up of two different samples.
- * multiple_projects_same:This project consits of 3 same project,and each test has two same illumina samples.
- * multiple_projects_different: A small artificial datasets is made up of 3 different projects.
+# test_data
+The folder stores the simple artificial datasets used to evaluate and test the codes of DIRNA-StatsViz. There are 5 types of dataset.
+ * single_sample: A small artificial datasets where the same frequency(0.25) of deletions length percentage 95%, 75%, 55%, 35% and 15%. All deletions                         deletion start coordinates are 10.
+ * multi_samples_same: This group consits of two same illumina samples.
+ * multi_samples_different: A small artificial datasets is made up of two different samples.
+ * multi_projects_same:This project consits of 3 same project,and each test has two same illumina samples.
+ * multi_projects_different: A small artificial datasets is made up of 3 different projects.
 
 
 
