@@ -125,7 +125,7 @@ optional arguments:
                         the default number of cycle is equal to the total count of the dirna of the sample
   ```
   Example command line using test_data:
-  After coming to the multi_samples_same folder, several samples in the folder can be analysed using the scripts run by one command line.
+  After coming to the multiple_samples_same folder, several samples in the folder can be analysed using the scripts run by one command line.
   
   ``python3 /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_multiple_samples.py --dirna_count_threshold 3 --venn_upset_threshold 3``
   
@@ -208,7 +208,7 @@ optional arguments:
                         the default number of cycle is equal to the total count of the dirna of the sample
   ```
   Example command line using test_data:
-  After coming to the multi_projects_same folder, several projects in the folder can be analysed using the scripts run by one command line.
+  After coming to the multiple_projects_same folder, several projects in the folder can be analysed using the scripts run by one command line.
   
   ``python3 /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_multiple_projects.py --dirna_count_threshold 3 --venn_upset_threshold 3``
   
