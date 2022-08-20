@@ -12,25 +12,19 @@ There are several ways for you to install it.
 
 2.Installing from PyPI(You must have pip>=19.3 to install from PyPI.) `pip install pandas`
 
+
 For R scripts,install
-* optparse `install.packages("optparse")`
-* ggplot2
-
-* hexbin
-
-* ggpubr
-
-* ggseqlogo
-
-* dplyr
-
-* grid
-
-* UpSetR
-
-* ggvenn
-
-* ggrepel
+* devtools    `install.packages("devtools")`
+* optparse    `install.packages("optparse")`
+* ggplot2   `install.packages("ggplot2")`
+* hexbin    `install.packages("hexbin")`
+* ggpubr    `install.packages("ggpubr")`
+* ggseqlogo   `devtools::install_github("omarwagih/ggseqlogo")`
+* dplyr   `install.packages("dplyr")`
+* grid    `install.packages("grid")`
+* UpSetR    `devtools::install_github("GuangchuangYu/UpSetR",force = TRUE)`
+* ggvenn    `install.packages("ggvenn")`
+* ggrepel   `install.packages("ggrepel")`
 
 # DIRNA_breakpoints_expected.py
 
