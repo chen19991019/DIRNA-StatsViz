@@ -50,10 +50,10 @@ optional arguments:
                         The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, 
                         the default number of cycle is equal to the total count of the dirna of the sample
   ```
-  After coming to the sample folder, the scripts are run by one command line.
-  Example command line using example data:
+  Example command line using test_data:
+  After coming to the single_sample folder, sample test can be analysed using the scripts run by one command line.
   
-  ``python3 ./DIRNA-StatsViz/DIRNA_stats_single_sample.py --sample illumina``
+  ``python /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_single_sample.py --sample illumina``
   
  Scripts generate plots by default, but you can control the script not to draw plots and only obtain the desired data tables by adding option ```--noplots_for_singlesample``` . 
  The number of times for cycling in breakpoints scripts is by default equal to the total number of DI-RNAs counts of the sample, but the you are allowed to customise the number of cycles to n by ```--cycle_index``` . <n> is a number customised by the you.
