@@ -1,3 +1,0 @@
-DelStart-DelEnd	Count	5-2bp	3-2bp	Length	Length%
-10-503	7	GA	CT	493	0.35
-10-221	6	GA	CT	211	0.15

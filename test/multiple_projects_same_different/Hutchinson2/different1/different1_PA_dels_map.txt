@@ -1,2 +1,0 @@
-DelStart-DelEnd	Count	5-2bp	3-2bp	Length	Length%
-10-1684	9	AG	TC	1674	0.75
