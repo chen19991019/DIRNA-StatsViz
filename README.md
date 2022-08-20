@@ -1,5 +1,5 @@
 # DIRNA-StatsViz
-This is the folder containing the scripts of the product DIRNA-StatsViz. You can download this folder to apply DIRNA-StatsViz.
+This is the folder containing the scripts of the product DIRNA-StatsViz. You can download this folder and follow the README.md in the folder to apply DIRNA-StatsViz.
 
 There are 4 Python scripts and 3 R scripts.
 
