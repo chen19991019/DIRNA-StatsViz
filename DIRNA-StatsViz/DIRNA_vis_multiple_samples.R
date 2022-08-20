@@ -25,7 +25,7 @@ make_venn_boxplot = function(segment)
     y=append(y,x)
   }
   
-  ggp=ggvenn(y, stroke_size = 0.5, set_name_size = 2)+
+  ggp=ggvenn(y, stroke_size = 0.5, set_name_size = 4)+
     labs(title = segment)
   return(ggp)
 }
@@ -298,7 +298,7 @@ ggsave(ns,filename = "plots/line_count_NS.pdf",height = 6, width = 8)
 
 #combining_line#
 combining_line_for_Count=ggarrange(pb2, pb1, pa, ha, np, na, m, ns, ncol = 2, nrow = 4)
-ggsave(combining_line_for_Count,filename = "plots/combining_line_for_DiRNA_count.pdf", height = 25, width = 15)
+ggsave(combining_line_for_Count,filename = "plots/combining_line_for_DiRNA_count.pdf", height = 18, width = 12)
 
 ####line_for_Type####
 pb2 = make_line_plot_for_Type(number_of_sample,"PB2")
@@ -326,7 +326,7 @@ ns = make_line_plot_for_Type(number_of_sample,"NS")
 ggsave(ns,filename = paste("plots/line_DiRNA_","NS",".pdf",sep=""),height = 6, width = 8)
 #combining_line#
 combining_line_for_Type=ggarrange(pb2, pb1, pa, ha, np, na, m, ns, ncol = 2, nrow = 4)
-ggsave(combining_line_for_Type,filename = "plots/combining_line_for_DiRNA_type.pdf", height = 25, width = 15)
+ggsave(combining_line_for_Type,filename = "plots/combining_line_for_DiRNA_type.pdf", height = 18, width = 12)
 
 ####dot plot for multiple smaples####
 a=make_dot_plot_for_breakpoints("A")
