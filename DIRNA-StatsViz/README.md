@@ -5,17 +5,28 @@ Some packages need to be installed beforehand.
 # Inatall Packages
 For the Python scripts, install
 * pandas
+There are several ways for you to install it.
+1.Installing with Anaconda(You must have installed Anaconda.)  `conda install pandas`
+2.Installing from PyPI(You must have pip>=19.3 to install from PyPI.) `pip install pandas`
 
 For R scripts,install
-* optparse
+* optparse `install.packages("optparse")`
 * ggplot2
+
 * hexbin
+
 * ggpubr
+
 * ggseqlogo
+
 * dplyr
+
 * grid
+
 * UpSetR
+
 * ggvenn
+
 * ggrepel
 
 # DIRNA_breakpoints_expected.py
