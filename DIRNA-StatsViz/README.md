@@ -72,7 +72,7 @@ For example, using test_data, after coming to the single_sample folder of test_d
  The number of times for cycling in breakpoints scripts is by default equal to the total number of DI-RNAs counts of the sample, but the you are allowed to customise the number of cycles to n by ```--cycle_index``` . <n> is a number customised by the you.
 
 ## Output
-Four data tables folders and a plot folder are produced to sample folder by default.
+Four data tables folders and a plot folder are produced to the sample folder by default.
 
 The data folders are:
 * dirna_length
@@ -234,7 +234,7 @@ For example, using test_data, after coming to the multiple_projects_same folder 
 ## Output
 Three processing data tables folders, a summary table and a plot folder are produced to working folder by default.
 
-The data folders are:
+The processing data folders are:
 * combined_deletions
 * filtered_deletions
 * sorted_final_deletions
