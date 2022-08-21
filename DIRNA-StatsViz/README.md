@@ -34,10 +34,10 @@ It is always called by single-sample scripts. It is responsible for assisting si
 
 # DIRNA_stats_single_sample.py & DIRNA_vis_single_sample.R
 
-They are single-sample scripts and apllied to perform single-sample analysis.
+They are single-sample scripts and applied to perform single-sample analysis.
 
 ## Input
-You are supposed to possess the analysed sample data folder and the .fasta files of eight segments of that sample.
+You are supposed to possess the analysed sample data folder and the FASTA files of eight segments of that sample.
 
 ## Usage
 
@@ -58,10 +58,15 @@ optional arguments:
                         The number of cycles to produce the expected data for breakpoints.Use it only if you want to customize the number of cycle, 
                         the default number of cycle is equal to the total count of the dirna of the sample
   ```
-  Example command line using test_data:
-  After coming to the single_sample folder, sample test can be analysed using the scripts run by one command line.
+  After coming to the single_sample folder, sample test can be analysed using the scripts run by one command line:
   
-  ``python /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_single_sample.py --sample illumina``
+  ``python <Full_PATH>/DIRNA_stats_single_sample.py --sample <sample name>``
+  
+``<Full_PATH>``:it is the full path of DIRNA-StatsViz folder downloaded.
+
+For example, using test_data, after coming to the single_sample folder in test_data folder, sample test can be analysed using the scripts run by
+
+  ``python /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_single_sample.py --sample test``
   
  Scripts generate plots by default, but you can control the script not to draw plots and only obtain the desired data tables by adding option ```--noplots_for_singlesample``` . 
  The number of times for cycling in breakpoints scripts is by default equal to the total number of DI-RNAs counts of the sample, but the you are allowed to customise the number of cycles to n by ```--cycle_index``` . <n> is a number customised by the you.
