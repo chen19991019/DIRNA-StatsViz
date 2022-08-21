@@ -220,13 +220,13 @@ optional arguments:
  
    After coming to the working folder, multiple projects can be analysed using the scripts run by one command line:
   
-  ``python <Full_PATH>//DIRNA_stats_multiple_projects.py --dirna_count_threshold <n> --venn_upset_threshold <n> --cycle_index <n>``
+  ``python <Full_PATH>//DIRNA_stats_multiple_projects.py --dirna_count_threshold <n> --venn_upset_threshold <n>``
   
 ``<Full_PATH>``:it is the full path of DIRNA-StatsViz folder downloaded.
 
 For example, using test_data, after coming to the multi_projects_same folder of test_data folder, projects in multi_projects_same folder can be analysed using the scripts run by
 
-  ``python /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_multiple_projects.py --dirna_count_threshold 3 --venn_upset_threshold 3 --cycle_index 10000``
+  ``python /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_multiple_projects.py --dirna_count_threshold 3 --venn_upset_threshold 3``
   
  Scripts would call scripts for single sample and for multiple samples to be run, so they would generate plots for single sample, multiple samples and multiple projects by default.You can add option ```--noplots_for_singlesample```, option ```--noplots_for_multiplesamples``` and option ```--noplots_for_multipleprojects```to prevent them generatring plots. 
  The number of times for cycling in breakpoints scripts is by default equal to the total number of DI-RNAs counts of the sample, but the you are allowed to customise the number of cycles to n by ```--cycle_index``` . <n> is a number customised by the you.
