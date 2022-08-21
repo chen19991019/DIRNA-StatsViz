@@ -19,10 +19,10 @@ Tips: there are two example files of sample_configure.csv and project_configure.
 # test_data
 The folder stores the simple artificial datasets used to evaluate and test the codes of DIRNA-StatsViz. There are 5 types of dataset.
  * single_sample: This is a small artificial datasets where deletions has the the same frequency(0.25) in length percentage 95%, 75%, 55%, 35% and 15%. All                           deletion start coordinates are 10.
- * multi_samples_same: This folder consits of two same illumina samples.
- * multi_samples_different: This is a small artificial datasets consiting of two different samples.
- * multi_projects_same: This project consits of 3 same project,and each project has two same illumina samples.
- * multi_projects_different: This is a small artificial datasets consiting of 3 different projects.
+ * multiple_samples_same: This folder consits of two same illumina samples.
+ * multiple_samples_different: This is a small artificial datasets consiting of two different samples.
+ * multiple_projects_same: This project consits of 3 same project,and each project has two same illumina samples.
+ * multiple_projects_different: This is a small artificial datasets consiting of 3 different projects.
 
 
 
