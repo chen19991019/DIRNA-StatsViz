@@ -220,7 +220,7 @@ optional arguments:
  
    After coming to the working folder, multiple projects can be analysed using the scripts run by one command line:
   
-  ``python <Full_PATH>//DIRNA_stats_multiple_projects.py --dirna_count_threshold <n> --venn_upset_threshold <n>``
+  ``python <Full_PATH>/DIRNA_stats_multiple_projects.py --dirna_count_threshold <n> --venn_upset_threshold <n>``
   
 ``<Full_PATH>``: it is the full path of DIRNA-StatsViz folder downloaded, such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz.
 
