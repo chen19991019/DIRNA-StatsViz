@@ -8,9 +8,9 @@ For the Python scripts, install
 
 There are several ways for you to install it.
 
-1.Installing with Anaconda(You must have installed Anaconda.)  `conda install pandas`
+1.Installing with Anaconda(You must have installed Anaconda(https://www.anaconda.com/).)  `conda install pandas`
 
-2.Installing from PyPI(You must have pip>=19.3 to install from PyPI.) `pip install pandas`
+2.Installing from PyPI(You must have pip>=19.3 to install from PyPI(https://pypi.org/).) `pip install pandas`
 
 
 For R scripts,install
@@ -92,7 +92,9 @@ The pdf of plots in plots folder are:
 * remaining_length_frequency_plot_.pdf
 
 ## Warning
-There will be an inevitable warning when drawing the WebLogo plot.For example:
+There will be an inevitable warning when drawing the WebLogo plot. But they can be ignored as they have no effect on the results or the running of the scripts.
+
+For example:
   
 Warning message:
 `guides(<scale> = FALSE)` is deprecated. Please use `guides(<scale> = "none")` instead. 
@@ -169,7 +171,9 @@ The pdf of plots in plots folder are:
 * summary_count.pdf
 
 ## Warning
-There will be an inevitable warning if sample sample has no qualifying DI-RNAs after screening when drawing the Venn and UpSet plot.For example:
+There will be an inevitable warning if sample sample has no qualifying DI-RNAs after screening when drawing the Venn and UpSet plot. But they can be ignored as they have no effect on the results or the running of the scripts
+
+For example:
   
 "!!!Warning:There is one sample where the count of all DiRNA of the NA segment is less than the threshold, so the upset plot does not apply to segment NA"
   
@@ -246,4 +250,4 @@ The pdf of plot in plots folder is: dot_breakpoints.pdf
 
 
 ## Warning
-There will be inevitable warnings printed by single-sample scripts and multi-sample scripts.
+There will be inevitable warnings printed by single-sample scripts and multi-sample scripts. But they can be ignored as they have no effect on the results or the running of the scripts
