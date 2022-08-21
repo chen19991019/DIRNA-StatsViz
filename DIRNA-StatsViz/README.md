@@ -62,7 +62,7 @@ optional arguments:
   
   ``python <Full_PATH>/DIRNA_stats_single_sample.py --sample <sample name>``
   
-``<Full_PATH>``:it is the full path of DIRNA-StatsViz folder downloaded.
+``<Full_PATH>``:it is the full path of DIRNA-StatsViz folder downloaded,such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz
 
 For example, using test_data, after coming to the single_sample folder of test_data folder, sample test can be analysed using the scripts run by
 
