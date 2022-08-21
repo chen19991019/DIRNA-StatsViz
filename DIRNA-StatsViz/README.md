@@ -60,9 +60,9 @@ optional arguments:
   ```
   After coming to the sample folder, the sample can be analysed using the scripts run by one command line:
   
-  ``python <Full_PATH>/DIRNA_stats_single_sample.py --sample <sample name>``
+  ``python <Full_Path>/DIRNA_stats_single_sample.py --sample <sample name>``
   
-``<Full_PATH>``: it is the full path of DIRNA-StatsViz folder downloaded,such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz.
+``<Full_Path>``: it is the full path of DIRNA-StatsViz folder downloaded,such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz.
 
 For example, using test_data, after coming to the single_sample folder of test_data folder, sample test can be analysed using the scripts run by
 
@@ -133,9 +133,9 @@ optional arguments:
   ```
   After coming to the working folder, multiple samples can be analysed using the scripts run by one command line:
   
-  ``python <Full_PATH>/DIRNA_stats_multiple_samples.py --dirna_count_threshold <n> --venn_upset_threshold <n>``
+  ``python <Full_Path>/DIRNA_stats_multiple_samples.py --dirna_count_threshold <n> --venn_upset_threshold <n>``
   
-``<Full_PATH>``: it is the full path of DIRNA-StatsViz folder downloaded, such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz.
+``<Full_Path>``: it is the full path of DIRNA-StatsViz folder downloaded, such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz.
 
 For example, using test_data, after coming to the multiple_samples_same folder of test_data folder, samples in multiple_samples_same folder can be analysed using the scripts run by
 
@@ -224,9 +224,9 @@ optional arguments:
  
    After coming to the working folder, multiple projects can be analysed using the scripts run by one command line:
   
-  ``python <Full_PATH>/DIRNA_stats_multiple_projects.py --dirna_count_threshold <n> --venn_upset_threshold <n>``
+  ``python <Full_Path>/DIRNA_stats_multiple_projects.py --dirna_count_threshold <n> --venn_upset_threshold <n>``
   
-``<Full_PATH>``: it is the full path of DIRNA-StatsViz folder downloaded, such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz.
+``<Full_Path>``: it is the full path of DIRNA-StatsViz folder downloaded, such as /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz.
 
 For example, using test_data, after coming to the multiple_projects_same folder of test_data folder, projects in multiple_projects_same folder can be analysed using the scripts run by
 
