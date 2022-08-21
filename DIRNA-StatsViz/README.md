@@ -135,7 +135,7 @@ optional arguments:
   
 ``<Full_PATH>``:it is the full path of DIRNA-StatsViz folder downloaded.
 
-For example, using test_data, after coming to the multi_samples_same folder of test_data folder, samples in multi_samples_same folder can be analysed using the scripts run by
+For example, using test_data, after coming to the multiple_samples_same folder of test_data folder, samples in multiple_samples_same folder can be analysed using the scripts run by
 
   ``python /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_multiple_samples.py --dirna_count_threshold 3 --venn_upset_threshold 3``
   
@@ -224,7 +224,7 @@ optional arguments:
   
 ``<Full_PATH>``:it is the full path of DIRNA-StatsViz folder downloaded.
 
-For example, using test_data, after coming to the multi_projects_same folder of test_data folder, projects in multi_projects_same folder can be analysed using the scripts run by
+For example, using test_data, after coming to the multiple_projects_same folder of test_data folder, projects in multiple_projects_same folder can be analysed using the scripts run by
 
   ``python /home/USERNAME/Downloads/DIRNA-StatsViz-main/DIRNA-StatsViz/DIRNA_stats_multiple_projects.py --dirna_count_threshold 3 --venn_upset_threshold 3``
   
